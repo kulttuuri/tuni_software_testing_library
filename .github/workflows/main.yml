@@ -19,6 +19,7 @@ jobs:
         with:
           version: 10.x
       - run: npm install
+      - run: npm install --global nyc
       - run: nyc npm test && nyc report --reporter=text-lcov | coveralls
       - name: Coveralls
         uses: coverallsapp/github-action@v1.1.0
