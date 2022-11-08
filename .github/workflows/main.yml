@@ -20,6 +20,10 @@ jobs:
           version: 10.x
       - run: npm install
       - run: npm install --global nyc
+      - run: npm install --global coveralls
+      - run: npm install --global mocha
+      - run: npm install --global chai
+      - run: npm install --global mocha-lcov-reporter
       - run: nyc npm test && nyc report --reporter=text-lcov | coveralls
       - name: Coveralls
         uses: coverallsapp/github-action@v1.1.0
