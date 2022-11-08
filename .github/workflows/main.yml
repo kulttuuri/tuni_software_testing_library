@@ -5,6 +5,9 @@ name: build
 jobs:
   test:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./tests
     strategy:
       matrix:
         test_number:
