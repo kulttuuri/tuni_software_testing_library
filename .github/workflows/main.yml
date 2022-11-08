@@ -19,7 +19,7 @@ jobs:
         with:
           version: 10.x
       - run: npm install
-      - run: make test-coverage-${{ matrix.test_number }}
+      - run: nyc npm test && nyc report --reporter=text-lcov | coveralls
       - name: Coveralls
         uses: coverallsapp/github-action@v1.1.0
         env:
