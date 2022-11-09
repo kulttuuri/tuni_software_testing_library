@@ -5,11 +5,6 @@ name: build
 jobs:
   test:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        test_number:
-          - 1
-          - 2
     steps:
       - uses: actions/checkout@master
       - uses: actions/setup-node@master
