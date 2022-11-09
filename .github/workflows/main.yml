@@ -11,16 +11,7 @@ jobs:
         with:
           version: 10.x
       - run: npm install
-      - run: npm install --global nyc
-      - run: npm install --global coveralls
-      - run: npm install --global mocha
-      - run: npm install --global chai
-      - run: npm install --global mocha-lcov-reporter
-      - run: ls
       - run: npm run c8coveralls
-      - run: ls
-      - run: pwd
-      - run: ls .coverage/
       - name: Coveralls
         uses: coverallsapp/github-action@v1.1.0
         env:
