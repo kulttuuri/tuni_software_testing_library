@@ -1,0 +1,21 @@
+{
+  "scripts": {
+    "test": "nyc mocha --require babel-register --require babel-polyfill",
+    "istanbul": "istanbul cover mocha test.js",
+    "c8": "c8 mocha test.js"
+  },
+  "type": "module",
+  "exports": "./test.js",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-register": "^6.26.0",
+    "c8": "^7.12.0",
+    "chai": "^4.3.7",
+    "coveralls": "^3.1.1",
+    "istanbul": "^0.4.5",
+    "mocha": "^10.1.0",
+    "mocha-lcov-reporter": "^1.3.0",
+    "nyc": "^15.1.0"
+  }
+}
