@@ -28,6 +28,7 @@ jobs:
         with:
           github-token: ${{ secrets.github_token }}
           parallel: true
+          path-to-lcov: /home/runner/work/tuni_software_testing_library/tuni_software_testing_library/.coverage/lcov.info
 
   finish:
     needs: test
