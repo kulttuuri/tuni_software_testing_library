@@ -19,6 +19,7 @@ jobs:
       - run: ls
       - run: npm run c8coveralls
       - run: ls
+      - run: pwd
       - run: ls .coverage/
       - name: Coveralls
         uses: coverallsapp/github-action@v1.1.0
