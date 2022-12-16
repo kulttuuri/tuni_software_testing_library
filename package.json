@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "c8coveralls": "NODE_ENV=test c8 mocha test.js --report lcovonly"
+    "c8coveralls": "NODE_ENV=test c8 mocha test.js --report lcovonly",
+    "test": "mocha test.js"
   },
   "type": "module",
   "exports": "./test.js",
